@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet, NavLink, useLocation } from "react-router-dom";
-import { Home, MessageCircle, Video, BarChart3, BookOpen, Menu, X, Settings } from "lucide-react";
+  import { Home, MessageCircle, Video, BarChart3, BookOpen, Menu, X, Settings, MemoryStick, Mic } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
@@ -11,6 +11,11 @@ const Layout = () => {
   const location = useLocation();
   const [title, setTitle] = useState("ThriveAI");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [listening, setListening] = useState(false);
+
+  const toggleListening = () => {
+    setListening((prev) => !prev);
+  };
   
   useEffect(() => {
     // Set page title based on current route
@@ -51,9 +56,9 @@ const Layout = () => {
 
   // Additional items for the slide-out drawer menu
   const menuItems = [
-    // { to: "/journal", icon: <BookOpen size={24} />, label: "Nhật ký" },
-    // { to: "/podcast", icon: <BookOpen size={24} />, label: "Thư viện" },
-    // { to: "/settings", icon: <Settings size={24} />, label: "Cài đặt" },
+    { to: "/journal", icon: <MemoryStick size={24} />, label: "Nhật ký" },
+    { to: "/podcast", icon: <BookOpen size={24} />, label: "Thư viện" },
+    { to: "/settings", icon: <Settings size={24} />, label: "Cài đặt" },
   ];
 
   return (
@@ -63,42 +68,13 @@ const Layout = () => {
         <header className="fixed top-0 left-0 right-0 h-16 bg-white shadow-sm z-50 flex items-center justify-between px-4">
           <h1 className="text-xl font-bold">{title}</h1>
           
-          <Drawer>
-            <DrawerTrigger asChild>
-              <button className="p-2 rounded-full hover:bg-muted">
-                <Menu size={24} />
-              </button>
-            </DrawerTrigger>
-            <DrawerContent>
-              <div className="p-4">
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-lg font-bold">Menu</h2>
-                </div>
-                <nav>
-                  <ul className="space-y-4">
-                    {menuItems.map((item) => (
-                      <li key={item.to}>
-                        <NavLink
-                          to={item.to}
-                          className={({ isActive }) =>
-                            cn(
-                              "flex items-center gap-3 px-4 py-3 rounded-lg transition-all",
-                              isActive
-                                ? "bg-accent text-primary font-medium"
-                                : "hover:bg-muted"
-                            )
-                          }
-                        >
-                          {item.icon}
-                          <span>{item.label}</span>
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-              </div>
-            </DrawerContent>
-          </Drawer>
+          <button
+            onClick={toggleListening}
+            className={`p-2 rounded-full ${listening ? "bg-green-500" : "bg-gray-300"}`}
+            title={listening ? "Dừng lắng nghe" : "Bắt đầu lắng nghe"}
+          >
+            <Mic size={24} className={listening ? "text-white" : "text-black"} />
+          </button>
         </header>
       )}
 

@@ -41,6 +41,7 @@ function App() {
               <Route path="mood-tracker" element={<MoodTracker />} />
               <Route path="podcast" element={<Podcast />} />
               <Route path="settings" element={<Settings />} />
+              
             </Route>
           </Routes>
           <Toaster />
