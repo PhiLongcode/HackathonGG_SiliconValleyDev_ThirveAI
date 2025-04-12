@@ -260,7 +260,7 @@ const VideoCall = () => {
     if ("webkitSpeechRecognition" in window || "SpeechRecognition" in window) {
       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
       const recognition = new SpeechRecognition();
-      recognition.lang = "vi-VN"; // Ngôn ngữ tiếng Việt
+      recognition.lang = "en-US"; // Ngôn ngữ tiếng Việt
       recognition.interimResults = true;
       recognition.continuous = false;
 
@@ -553,7 +553,7 @@ const VideoCall = () => {
   const speak = (text: string) => {
     const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "vi-VN";
+    utterance.lang = "en-US";
     utterance.rate = 1.0;
     utterance.pitch = 1.0;
     synth.cancel();
@@ -640,7 +640,7 @@ const VideoCall = () => {
         {/* Call controls */}
         <div className="h-20 bg-background flex items-center justify-center gap-4">
           {/* Nút bật/tắt mic */}
-          {/* <Button
+          <Button
             variant="outline"
             size="icon"
             className={cn(
@@ -650,7 +650,7 @@ const VideoCall = () => {
             onClick={() => setIsMicOn(!isMicOn)}
           >
             {isMicOn ? <Mic className="h-5 w-5" /> : <MicOff className="h-5 w-5" />}
-          </Button> */}
+          </Button>
 
           {/* Nút bật/tắt camera */}
           <Button

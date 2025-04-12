@@ -5,7 +5,6 @@ ThriveAI AMI UI là một ứng dụng hỗ trợ sức khỏe tinh thần, cung
 ## Mục Lục
 
 - [Giới Thiệu](#giới-thiệu)
-- [Cấu Trúc Dự Án](#cấu-trúc-dự-án)
 - [Cài Đặt](#cài-đặt)
 - [Chạy Dự Án](#chạy-dự-án)
 - [Tính Năng](#tính-năng)
@@ -17,64 +16,6 @@ ThriveAI AMI UI là một ứng dụng hỗ trợ sức khỏe tinh thần, cung
 
 ThriveAI AMI UI là một ứng dụng toàn diện giúp người dùng cải thiện sức khỏe tinh thần thông qua các tính năng như theo dõi tâm trạng, nhật ký cảm xúc, và phân tích cảm xúc bằng AI.
 
-## Cấu Trúc Dự Án
-
-## Cài Đặt
-
-### Yêu Cầu
-
-- Node.js >= 16.x
-- Python >= 3.8
-- `pip` và `virtualenv`
-
-### Hướng Dẫn
-
-1. Clone dự án:
-   ```bash
-   git clone https://github.com/your-repo/thriveai-ami-ui.git
-   cd thriveai-ami-ui
-## Cấu Trúc Dự Án
-
-```
-ThriveAI-AMI-UI-main/
-├── AI2/
-│   └── AI2/
-│       ├── pycache/
-│       ├── static/
-│       ├── temp/
-│       ├── app_version_3.py
-│       ├── app.py
-│       ├── dia.json
-│       ├── output.mp3
-│       ├── output.wav
-│       ├── requirements.txt
-│       ├── test.py
-│       ├── test2.py
-│       ├── test3.py
-│       └── backend/
-│           ├── pycache/
-│           ├── main.py
-│           └── users.json
-├── node_modules/
-├── public/
-├── src/
-├── Test/
-├── .env
-├── .gitignore
-├── bash.exe.stackdump
-├── bun.lockb
-├── components.json
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-└── README.md
-```
-
----
-
-## Cài Đặt
 
 ### Yêu Cầu
 
@@ -89,36 +30,40 @@ ThriveAI-AMI-UI-main/
 - **RAM**: Minimum 4GB
 - **Disk Space**: 2GB
 
-### Hướng Dẫn
+### Cài Đặt
 
 1. **Clone dự án:**
    ```bash
    git clone https://github.com/PhiLongcode/HackathonGG_SiliconValleyDev_ThirveAI
-   cd thriveai-ami-ui
+   cd thriveai-ami-ui-main
    ```
 
-2. **Cài đặt môi trường backend (Python):**
+2. **Cài đặt môi trường AI (Python):**
    ```bash
-   cd AI2/AI2
-   python -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
-   pip install -r requirements.txt
+   cd AI
+   pip install requirements.tx
+   
    ```
-
-3. **Cài đặt frontend (Node.js):**
+3. **Cài đặt môi trường Backend (Python):**
+   ```bash
+   cd bạckend
+   pip install fastapi uvicorn
+   
+   ```
+4. **Cài đặt frontend (Node.js):**
    ```bash
    npm install
    ```
-
 ---
 
 ## Chạy Dự Án
-
-### Backend (FastAPI hoặc Flask)
+### AI ()
 ```bash
-python app.py
-# hoặc
-python app_version_3.py
+uvicorn main:app --reload
+```
+### Backend (FastAPI)
+```bash
+python main.py
 ```
 
 ### Frontend (React)
@@ -132,6 +77,7 @@ npm run dev
 Chức năng đã hoàn thành
 - **Nhận diện và phân tích cảm xúc từ âm thanh (MP3/WAV)**
 - **Theo dõi tâm trạng hàng ngày**
+- **Nhật ký cảm xúc hàng ngày**
 - **Gợi ý cải thiện sức khỏe tinh thần dựa trên AI**
 - **Giao diện tương tác, thân thiện**
 - **Tích hợp backend và frontend mượt mà**
@@ -153,6 +99,7 @@ Chức năng đã hoàn thành
 
 - **Emotion Recognition từ giọng nói**
 - **Gemini API**
+- **API Reference fast API + uvicorn và web searching API, Installation, Run Locally, Feature**
 
 ### Công Cụ Phát Triển
 
@@ -183,4 +130,4 @@ Mọi đóng góp đều được hoan nghênh! Để bắt đầu:
 ---
 
 ## Liên Hệ
-
+- Email: nguyenphilongls2k4@gmail.com (leader)
