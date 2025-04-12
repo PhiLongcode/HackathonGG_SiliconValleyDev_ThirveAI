@@ -94,7 +94,7 @@ npm run dev
 ---
 
 ## Tính Năng
-
+Chức năng đã hoàn thành
 - **Nhận diện và phân tích cảm xúc từ âm thanh (MP3/WAV)**
 - **Theo dõi tâm trạng hàng ngày**
 - **Gợi ý cải thiện sức khỏe tinh thần dựa trên AI**
@@ -149,6 +149,3 @@ Mọi đóng góp đều được hoan nghênh! Để bắt đầu:
 
 ## Liên Hệ
 
-- 📧 **Email**: your-email@example.com
-- 🌐 **Website**: [https://yourdomain.com](https://yourdomain.com)
-- 💬 **Facebook/Zalo**: ThriveAI Team
