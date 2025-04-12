@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Therapy Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <!-- Live2D Dependencies -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@5.3.3/dist/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script>
+    
+    <!-- Main App -->
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar-container">
+            <!-- Live2D canvas will be inserted here -->
+            <canvas id="live2d" width="800" height="600"></canvas>
+        </div>
+        
+        <div class="interaction-panel">
+            <div class="conversation-box">
+                <div id="conversation-history"></div>
+            </div>
+            
+            <div class="controls">
+                <button id="startRecording" class="control-btn">
+                    <span class="icon">🎤</span>
+                    Start Recording
+                </button>
+                <button id="stopRecording" class="control-btn" disabled>
+                    <span class="icon">⏹</span>
+                    Stop Recording
+                </button>
+            </div>
+
+            <div class="status">
+                <p id="status-text">Ready to start...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Webcam video element (hidden) -->
+    <video id="webcam" autoplay playsinline style="display: none;"></video>
+</body>
+</html> 

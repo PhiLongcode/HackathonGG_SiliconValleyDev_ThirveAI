@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hkstudio-440613",
+  "private_key_id": "22483c967f2221a3daf64aeda892512f05135737",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDhOayCx3+hMkP0\nqNpX69ef2Ht+tonV652JCHWTTKTMbzyu8GhzKVu41kKtkM1orjxI2x18zmciN7jC\ntrAQJ+b/3SPu5AiwM/izy6rzjIHJUVKBfgIGtiP7CaeGMwyKu6lZjDIioSF9pnoS\nICo4Qmbg78VAenSjo3kGB0DCS6eoEFkuk4At79aHVKFV3wUa2Cke1QcJOd5Npe3i\nKJD79L/zCUZo8J/DpIca0boq7aNK2jNmP22JqCDtqSvmGz2BuhkrsEFV5xk19gju\nzD+C3hqJw3ReSLjg5Fn411U4alpkXyCTaOcr4WaNqR0khvF1aVa8Scdb6ePlvY6H\nRrpHxt09AgMBAAECggEAJdb1gZxoeEn0al7THknwtnmd1/5tnnwBQfRiop6SIom+\n2YppFg4ZC68t0TDeneuGE9yCcgVQhQp1F3uvjWtSz2KVRq3XutjkfDqn7FbLOGpa\nEQj9aKjB10u6Ml0Ryp44V+PqyXAmaxCk+jYeuciINdr62jgosBSHQQjHa81fq+fQ\nd4942t4puZJNDYm1nYOTLMyUzB7U67AnWWcWS+weKr9QWZRIkuf7Lvumw6CVqdbh\nrJnZL6QHWVZklCcpsh91UTb9Q814PPNFoduNIHjcec91kuIs+ucw+iRb1r+8q8ju\n+Fz8H4rr44QdsgUrZ5yqo/QSXnx38fs06HrfDwySiQKBgQD8NSxiAE4nv7tdxQX7\nfGwIACNtMwyqinppqWq2Pg99KplMprP0Ad+qI/ks0dCzSfzV29mrsxoqsnf3BKmV\nomwM1Quibh+/3v2xCzwyTsDck363e4EfIP+L4vpYV3qdxJiwQUlnnbG8DypIQEzj\nYCDujwzwsfTx3Zbi67o380EMGQKBgQDknKL+ktajZi+2OhoL/a9SxHRbsMOp5Svg\nQWdan1XdSEolRgtC17i2gnLW2LTu+HP2D6GRJCb55uq83PCBZ4FxmBE3VlayKZR9\nChbp4WWUb7dnW8pIh5iAVGLli3Y9bbufHzlYxhV/7MCurU1BZSmSUgOkTxCP7frJ\n3PfHJW6+xQKBgDpTQbRYRbrDiF0jF0MVfxZKkebLC37VD4In/9mteH+FvnYPh0ZC\nuKrsLs/CpfUQgzwh37Dpdn+xTjT+CwnjygEds9cYiJcixqCO7JjlxYw9P+zGzxGX\n3AFJuIN9l4ms0XLRZlxkB5pqF2kmFaHvtS32PxPa076rdB1+Tk5qHvzhAoGBAKid\n55LBF1L5weM0Q5XojPINOI2QeSDMiWokk2jB8QD/msCXQyMQHYtv9+gDeqBv3If2\ny4JUGfNkoGqgwzuO7miscrZQFi3egUkgsfnbZ6LuK2Yuy6pnaNHua+tGy/VPBH2+\n9/tETwNFynCMHllHljv4Bfug3WRrcPiG5LKcJ2zJAoGAJ+yEFKxoPPEonMuk1PLL\nONLY1ZCFsLjUngrD0mXdV5eaWxENnk3qs0j7wkOyjxi0G/mhdM5mdBbV5rUf1/EI\nfX5dyEZ/e4Zr9RXncCeSwTkz3Qk0Nu626XbW2h/Z+xBN6XmH6HLVEmRUOs18nBVl\n7UlABC44ZNJjAj7mX9Amj2M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow@hkstudio-440613.iam.gserviceaccount.com",
+  "client_id": "115391932473301463124",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow%40hkstudio-440613.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
