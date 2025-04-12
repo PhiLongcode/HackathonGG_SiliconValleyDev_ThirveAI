@@ -1,7 +1,7 @@
 ## Cấu Trúc Dự Án
 
 ```
-ThriveAI-AMI-UI/
+ThriveAI-AMI-UI-main/
 ├── AI2/
 │   └── AI2/
 │       ├── pycache/
@@ -46,12 +46,19 @@ ThriveAI-AMI-UI/
 - **Node.js** >= 16.x
 - **Python** >= 3.8
 - `pip`, `virtualenv`
+- - **Node.js**: v16+
+- **npm**: v8+
+- **Python**: 3.8+
+- **MySQL**: 8.0+ (recommended for database storage)
+- **Operating System**: Windows 10+ / macOS Monterey+ / Ubuntu 20.04+
+- **RAM**: Minimum 4GB
+- **Disk Space**: 2GB
 
 ### Hướng Dẫn
 
 1. **Clone dự án:**
    ```bash
-   git clone https://github.com/your-repo/thriveai-ami-ui.git
+   git clone https://github.com/PhiLongcode/HackathonGG_SiliconValleyDev_ThirveAI
    cd thriveai-ami-ui
    ```
 
@@ -82,8 +89,6 @@ python app_version_3.py
 ### Frontend (React)
 ```bash
 npm run dev
-# hoặc nếu dùng Next.js:
-npm run start
 ```
 
 ---
@@ -107,16 +112,17 @@ npm run start
 
 ### Backend
 
-- **Python** (Flask hoặc FastAPI)
+- **Python** (FastAPI)
 
 ### AI/ML
 
 - **Emotion Recognition từ giọng nói**
+- **Gemini API**
 
 ### Công Cụ Phát Triển
 
 - **Dev Tools**: VSCode, Git, Node.js, Virtualenv
-- **API**: Express APIs hoặc FastAPI endpoints
+- **API**: FastAPI endpoints
 
 ---
 
